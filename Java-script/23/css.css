@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+input , button{
+    all: unset;
+    padding: 10px 50px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5%;
+    color: black;
+}
+
+button{
+    background-color: rgb(7, 159, 159);
+    color: white;
+}
+
+
+#total{
+    font-size: 2rem;
+}

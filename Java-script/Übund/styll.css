@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+input , button{
+    all: unset;
+    margin: 5px 0;
+    border: 1px solid gray ;
+    border-radius: 5%;
+    color: black;
+    padding: 10px 20px;
+}
+
+
+button{
+    background-color: aquamarine;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}

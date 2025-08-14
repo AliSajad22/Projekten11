@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input , button{
+    all: unset;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+
+button{
+    background-color: gray;
+    color: white;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    transition: 5ms;
+}
+
+
+image{
+    width: 500px;
+    height: 500px;
+}
+
+.shoe{
+    width: 100%;
+}
