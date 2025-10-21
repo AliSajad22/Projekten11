@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atoms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Svg Code -->
+    <svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="arrow-right" width="26" height="23" viewBox="0 0 26 23">
+        <path
+          d="M25.1857 12.5607C25.7714 11.9749 25.7714 11.0251 25.1857 10.4393L15.6397 0.893398C15.0539 0.307611 14.1042 0.307611 13.5184 0.893398C12.9326 1.47919 12.9326 2.42893 13.5184 3.01472L22.0037 11.5L13.5184 19.9853C12.9326 20.5711 12.9326 21.5208 13.5184 22.1066C14.1042 22.6924 15.0539 22.6924 15.6397 22.1066L25.1857 12.5607ZM0.125 13H24.125V10H0.125V13Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="img-hero">
+        <rect
+          x="-0.11731"
+          y="-22.881"
+          width="572.024"
+          height="595.899"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="PJ-logo" width="102" height="71" viewBox="0 0 102 71">
+        <path
+          d="M3.2605 29.7762H9.35294V20.0338H10.0672C15.1513 20.0338 17.4622 17.6708 17.4622 11.9497V8.84042C17.4622 3.11934 15.1513 0.756289 10.0672 0.756289H3.2605V29.7762ZM9.35294 14.6444V6.14571H10.0672C10.9916 6.14571 11.3697 6.76757 11.3697 8.21856V12.5716C11.3697 14.0226 10.9916 14.6444 10.0672 14.6444H9.35294Z"
+          fill="currentColor"
+        />
+        <path
+          d="M19.1399 29.7762H25.2323V18.873C25.3164 18.873 25.6525 18.873 25.6945 18.873L27.6693 29.7762H33.9718L31.3248 17.2977C32.7533 16.0125 33.4256 13.8982 33.4256 10.7889V8.84042C33.4256 3.11934 31.1147 0.756289 26.0307 0.756289H19.1399V29.7762ZM25.2323 13.4836V6.14571H26.0307C26.955 6.14571 27.3332 6.76757 27.3332 8.21856V11.4108C27.3332 12.8618 26.955 13.4836 26.0307 13.4836H25.2323Z"
+          fill="currentColor"
+        />
+        <path
+          d="M42.4044 30.3152C47.0683 30.3152 49.5893 27.4961 49.5893 22.2311V8.30148C49.5893 3.07788 47.0683 0.217346 42.4044 0.217346C37.7405 0.217346 35.2195 3.03643 35.2195 8.30148V22.2311C35.2195 27.5376 37.6985 30.3152 42.4044 30.3152ZM42.4044 24.7185C41.6481 24.7185 41.312 24.1381 41.312 22.6456V7.88691C41.312 6.39445 41.6061 5.81405 42.4044 5.81405C43.2027 5.81405 43.4968 6.43591 43.4968 7.88691V22.6456C43.4968 24.1381 43.1607 24.7185 42.4044 24.7185Z"
+          fill="currentColor"
+        />
+        <path
+          d="M50.9591 36.4094C55.5389 36.4094 57.9759 34.0878 57.9759 28.7398V0.756289H51.8835V29.1129C51.8835 30.481 51.5053 31.0614 50.4969 31.0614C50.2028 31.0614 49.9087 31.02 49.5725 30.8956V36.285C50.0347 36.3679 50.3709 36.4094 50.9591 36.4094Z"
+          fill="currentColor"
+        />
+        <path
+          d="M60.5002 29.7762H71.2565V23.9723H66.5926V17.961H70.8363V12.157H66.5926V6.56028H71.1304V0.756289H60.5002V29.7762Z"
+          fill="currentColor"
+        />
+        <path
+          d="M80.276 30.3152C84.8978 30.3152 87.4188 27.4961 87.4188 22.2311V18.5828H81.3264V22.6456C81.3264 24.1381 81.0323 24.7185 80.276 24.7185C79.5617 24.7185 79.2256 24.0966 79.2256 22.6456V7.88691C79.2256 6.39445 79.5197 5.81405 80.276 5.81405C81.0323 5.81405 81.3264 6.43591 81.3264 7.88691V11.3278H87.4188V8.30148C87.4188 3.07788 84.8978 0.217346 80.276 0.217346C75.6541 0.217346 73.1331 3.03643 73.1331 8.30148V22.2311C73.1331 27.5376 75.6121 30.3152 80.276 30.3152Z"
+          fill="currentColor"
+        />
+        <path
+          d="M92.0308 29.7762H98.1233V6.56028H101.695V0.756289H88.4594V6.56028H92.0308V29.7762Z"
+          fill="currentColor"
+        />
+        <path
+          d="M2.33614 67.9168C6.91597 67.9168 9.35295 65.5952 9.35295 60.2472V32.2637H3.26051V60.6203C3.26051 61.9884 2.88236 62.5688 1.87395 62.5688C1.57984 62.5688 1.28572 62.5273 0.949585 62.403V67.7924C1.41177 67.8753 1.7479 67.9168 2.33614 67.9168Z"
+          fill="currentColor"
+        />
+        <path
+          d="M18.852 61.8226C23.5159 61.8226 26.0369 59.0035 26.0369 53.7384V39.8089C26.0369 34.5853 23.5159 31.7247 18.852 31.7247C14.1882 31.7247 11.6672 34.5438 11.6672 39.8089V53.7384C11.6672 59.045 14.1461 61.8226 18.852 61.8226ZM18.852 56.2259C18.0957 56.2259 17.7596 55.6455 17.7596 54.153V39.3943C17.7596 37.9018 18.0537 37.3214 18.852 37.3214C19.6503 37.3214 19.9445 37.9433 19.9445 39.3943V54.153C19.9445 55.6455 19.6083 56.2259 18.852 56.2259Z"
+          fill="currentColor"
+        />
+        <path
+          d="M28.3311 61.2836H34.4235V48.4734H34.5916L37.7429 61.2836H44.2555L40.2218 46.1103L43.8773 32.2637H37.6168L34.5916 44.6593H34.4235V32.2637H28.3311V61.2836Z"
+          fill="currentColor"
+        />
+        <path
+          d="M60.6135 61.2836H66.7059V50.3804C66.7899 50.3804 67.1261 50.3804 67.1681 50.3804L69.1429 61.2836H75.4454L72.7983 48.805C74.2269 47.5199 74.8992 45.4056 74.8992 42.2963V40.3478C74.8992 34.6267 72.5883 32.2637 67.5042 32.2637H60.6135V61.2836ZM66.7059 44.991V37.6531H67.5042C68.4286 37.6531 68.8067 38.275 68.8067 39.7259V42.9181C68.8067 44.3691 68.4286 44.991 67.5042 44.991H66.7059Z"
+          fill="currentColor"
+        />
+        <path
+          d="M47.3782 67.7095H58.1345V61.9055H53.4706V55.8942H57.7143V50.0902H53.4706V44.4935H58.0084V38.6895H47.3782V67.7095Z"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+    <!-- Header -->
+    <header class="header wrapper">
+      <h1 class="headline headline--small">
+        WE 🖤 <br />
+        COMPONENTS
+      </h1>
+      <!-- Burger menu -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="burger-icon">
+        <span class="line"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#Welcome" class="nav-link">Welcome</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#Intro" class="nav-link">Intro</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#Details" class="nav-link">Details</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#Conclusion" class="nav-link">Conclusion</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <section class="hero wrapper">
+        <div class="hero__image">
+          <img src="images/hero-img.png" alt="img" />
+        </div>
+        <div class="hero__container">
+          <h2 class="headline headline--large">Component-driven front-end?</h2>
+          <p class="copy">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn btn--primary">
+            <span class="btn__text"> Hell Yeah! </span>
+            <svg class="icon" width="26" height="23">
+              <use href="#arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- Centered-Text -->
+      <section class="center-container wrapper">
+        <h2 class="headline headline--large">
+          Headline in <br />
+          centered?!
+        </h2>
+        <p class="copy">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <button class="btn btn--primary">
+          <span class="btn__text"> Hell Yeah! </span>
+          <svg class="icon" width="26" height="23">
+            <use href="#arrow-right" />
+          </svg>
+        </button>
+      </section>
+      <!-- img-row -->
+      <div class="img-row">
+        <svg class="logo logo--primary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--secondary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--primary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--secondary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--primary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--secondary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--primary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--secondary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--primary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+
+        <svg class="logo logo--secondary" width="102" height="71">
+          <use href="#PJ-logo" />
+        </svg>
+      </div>
+      <!-- hero reverse -->
+      <section class="hero hero-reverse wrapper">
+        <div class="hero__image-reverse">
+          <img src="images/hero-img.png" alt="img" />
+        </div>
+        <div class="hero__container">
+          <h2 class="headline headline--large">Component-driven front-end?</h2>
+          <p class="copy">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn btn--primary">
+            <span class="btn__text"> Hell Yeah! </span>
+            <svg class="icon" width="26" height="23">
+              <use href="#arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- List-Teaser -->
+      <section class="directory wrapper">
+        <div class="directory__inner">
+          <div class="info-block">
+            <h3 class="headline headline--medium">Clients 🖤</h3>
+            <ul class="list">
+              <li class="list__item">Ullstein Buchverlag</li>
+              <li class="list__item">Armed Angels</li>
+              <li class="list__item">Fork Unstable Media</li>
+              <li class="list__item">KNSK</li>
+              <li class="list__item">Smile Eyes</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="headline headline--medium">Team 🖤</h3>
+            <ul class="list">
+              <li class="list__item">Alex</li>
+              <li class="list__item">Farhang</li>
+              <li class="list__item">Felix</li>
+              <li class="list__item">Michi</li>
+              <li class="list__item">Sergej</li>
+              <li class="list__item">Robin</li>
+              <li class="list__item">Tufan</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="headline headline--medium">Network 🖤</h3>
+            <ul class="list">
+              <li class="list__item">Johannes</li>
+              <li class="list__item">Ilmo</li>
+              <li class="list__item">Floschi</li>
+              <li class="list__item">Nico</li>
+              <li class="list__item">Radek</li>
+              <li class="list__item">Karsten</li>
+              <li class="list__item">Ivan</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="headline headline--medium">Tech 🖤</h3>
+            <ul class="list">
+              <li class="list__item">React</li>
+              <li class="list__item">Next.js</li>
+              <li class="list__item">Storyblok</li>
+              <li class="list__item">Craft</li>
+              <li class="list__item">Shopware</li>
+              <li class="list__item">Shopify</li>
+            </ul>
+          </div>
+          <button class="btn btn--primary">
+            <span class="btn__text"> Hell Yeah! </span>
+            <svg class="icon" width="26" height="23">
+              <use href="#arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- two-column-teaser -->
+      <section class="conclusion wrapper">
+        <div class="conclusion__container">
+          <h4 class="headline headline--x-small">Conclusion</h4>
+          <div class="conclusion__content">
+            <p class="copy">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea.
+            </p>
+            <p class="copy">
+              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+              sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+          </div>
+          <button class="btn btn--secondary">
+            <span class="btn__text">Join Now!</span>
+            <svg class="icon" width="26" height="23">
+              <use href="#arrow-right" />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+    <button class="btn btn--primary">
+      <span class="btn__text"> Hell Yeah! </span>
+      <svg class="icon" width="26" height="23">
+        <use href="#arrow-right" />
+      </svg>
+    </button>
+
+    <button class="btn btn--secondary">
+      <span class="btn__text">Join Now!</span>
+      <svg class="icon" width="26" height="23">
+        <use href="#arrow-right" />
+      </svg>
+    </button>
+    <!-- Navigation links -->
+    <a href="#Welcome" class="nav-link">Welcome</a>
+    <a href="#Intro" class="nav-link">Intro</a>
+    <a href="#Details" class="nav-link">Details</a>
+    <a href="#Conclusion" class="nav-link">Conclusion</a>
+    <a href="#Contact" class="nav-link">Contact</a>
+    <!-- site titles -->
+    <h1 class="headline headline--small">
+      WE 🖤 <br />
+      COMPONENTS
+    </h1>
+    <h2 class="headline headline--large">Component-driven front-end?</h2>
+    <h3 class="headline headline--medium">Clients 🖤</h3>
+    <h4 class="headline headline--x-small">Conclusion</h4>
+    <!-- Paragraphs  -->
+    <p class="copy">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </p>
+    <!-- list of feature -->
+    <ul class="list">
+      <li class="list__item">Ullstein Buchverlag</li>
+      <li class="list__item">Armed Angels</li>
+      <li class="list__item">Fork Unstable Media</li>
+      <li class="list__item">KNSK</li>
+      <li class="list__item">Smile Eyes</li>
+    </ul>
+    <!-- links of feature -->
+    <a href="jobs@project-joker.com" class="link">jobs@project-joker.com</a>
+    <a class="headline headline--x-large">THANK YOU!</a>
+    <ul class="nav">
+      <li class="nav-item"><a href="#Welcome" class="nav-link">Welcome</a></li>
+      <li class="nav-item"><a href="#Intro" class="nav-link">Intro</a></li>
+      <li class="nav-item"><a href="#Details" class="nav-link">Details</a></li>
+      <li class="nav-item">
+        <a href="#Conclusion" class="nav-link">Conclusion</a>
+      </li>
+      <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+    </ul>
+    <!-- img-row -->
+    <div class="img-row">
+      <svg class="logo logo--primary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--secondary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--primary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--secondary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--primary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--secondary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--primary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--secondary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--primary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+
+      <svg class="logo logo--secondary" width="102" height="71">
+        <use href="#PJ-logo" />
+      </svg>
+    </div>
+    <!-- two-column-teaser -->
+    <section class="conclusion wrapper">
+      <div class="conclusion__container">
+        <h4 class="headline headline--x-small">Conclusion</h4>
+        <div class="conclusion__content">
+          <p class="copy">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea.
+          </p>
+          <p class="copy">
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+        </div>
+        <button class="btn btn--secondary">
+          <span class="btn__text">Join Now!</span>
+          <svg class="icon" width="26" height="23">
+            <use href="#arrow-right" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <!-- List-Teaser -->
+    <section class="directory wrapper">
+      <div class="directory__inner">
+        <div class="info-block">
+          <h3 class="headline headline--medium">Clients 🖤</h3>
+          <ul class="list">
+            <li class="list__item">Ullstein Buchverlag</li>
+            <li class="list__item">Armed Angels</li>
+            <li class="list__item">Fork Unstable Media</li>
+            <li class="list__item">KNSK</li>
+            <li class="list__item">Smile Eyes</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3 class="headline headline--medium">Team 🖤</h3>
+          <ul class="list">
+            <li class="list__item">Alex</li>
+            <li class="list__item">Farhang</li>
+            <li class="list__item">Felix</li>
+            <li class="list__item">Michi</li>
+            <li class="list__item">Sergej</li>
+            <li class="list__item">Robin</li>
+            <li class="list__item">Tufan</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3 class="headline headline--medium">Network 🖤</h3>
+          <ul class="list">
+            <li class="list__item">Johannes</li>
+            <li class="list__item">Ilmo</li>
+            <li class="list__item">Floschi</li>
+            <li class="list__item">Nico</li>
+            <li class="list__item">Radek</li>
+            <li class="list__item">Karsten</li>
+            <li class="list__item">Ivan</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3 class="headline headline--medium">Tech 🖤</h3>
+          <ul class="list">
+            <li class="list__item">React</li>
+            <li class="list__item">Next.js</li>
+            <li class="list__item">Storyblok</li>
+            <li class="list__item">Craft</li>
+            <li class="list__item">Shopware</li>
+            <li class="list__item">Shopify</li>
+          </ul>
+        </div>
+        <button class="btn btn--primary">
+          <span class="btn__text"> Hell Yeah! </span>
+          <svg class="icon" width="26" height="23">
+            <use href="#arrow-right" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
